@@ -190,7 +190,34 @@ a {
 }
 
 /* Add margin between navigation items */
-.nav .hébergements,
-.nav .activités {
-    margin-right: 20px; /* Adjust the margin as needed */
+.nav a
+ {
+    margin-left: 20px; /* Adjust the margin as needed */
+    transition: all 400ms;  
+    padding-top: 10px;
+    border-top:  2px solid transparent;
+
 }
+
+.nav a:hover
+{
+    color: blue;
+    border-top: 2px solid #0065FC;
+}
+
+.search-form 
+{
+    display: flex;
+
+}
+
+.search-form div
+{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+}
+
