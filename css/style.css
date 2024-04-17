@@ -213,35 +213,36 @@ a {
 
 .search-form div
 {
-    background-color: aqua;
     display: flex;
     height: 40px;
     width: 40px;
     background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
-    border-top-left-radius:25%;
-    border-bottom-left-radius:25%;
+    border-top-left-radius:15%;
+    border-bottom-left-radius:15%;
 }
 
 .search-form input[type="text"]
 {
     text-align: center;
-    font-weight: bolder;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
     color:black !important; 
 }
 
 .search-form button
 {
     font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding:15px 16px 15px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0065FC;
     color: white;
-    border-top-right-radius:25%;
-    border-bottom-right-radius:25%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    
+    border-top-right-radius:15%;
+    border-bottom-right-radius:15%;
+    font-family:Raleway;
+    font-size: 18px;
 }
 
