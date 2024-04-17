@@ -170,28 +170,25 @@ a {
 .header{
     display:flex;
     justify-content: space-between;
-    background-color: beige;
     margin-bottom: 20px;
 }
 
-.container-logo{
+.container-logo {
     margin-top: 20px;
    
 }
 
-.container-logo img{
+.container-logo img {
     width: 61px ;
 }
 
-.nav{
+.nav {
     display:flex;
     justify-content:space-between;
-    background-color: #DEEBFF;
 }
 
 /* Add margin between navigation items */
-.nav a
- {
+.nav a {
     margin-left: 20px; /* Adjust the margin as needed */
     transition: all 400ms;  
     padding-top: 10px;
@@ -199,40 +196,37 @@ a {
 
 }
 
-.nav a:hover
-{
+.nav a:hover {
     color: blue;
     border-top: 2px solid #0065FC;
 }
 
-.search-form 
-{
+.search-form {
     display: flex;
     height: 40px;
+    margin-bottom: 20px;
 }
 
-.search-form div
-{
+.search-form div {
     display: flex;
     height: 40px;
     width: 40px;
     background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
-    border-top-left-radius:15%;
-    border-bottom-left-radius:15%;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
 }
 
-.search-form input[type="text"]
-{
+.search-form input[type="text"] {
     text-align: center;
     font-weight: 700;
     font-size: 18px;
-    color:black !important; 
+    color:black; 
+    border:0.2px solid gainsboro;
 }
 
-.search-form button
-{
+.search-form button {
     font-weight: bold;
     padding:15px 16px 15px 16px;
     display: flex;
@@ -240,9 +234,44 @@ a {
     align-items: center;
     background-color: #0065FC;
     color: white;
-    border-top-right-radius:15%;
-    border-bottom-right-radius:15%;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
     font-family:Raleway;
     font-size: 18px;
+    border-color: transparent;
 }
 
+.filtres {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-family:Raleway;
+    font-size: 18px;
+    font-weight:bolder;
+}
+
+.filtres button {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    border-radius: 25px;
+    padding: 10px;
+    font-family:Raleway;
+    font-size: 18px;
+    font-weight:bolder;
+    border:0.2px solid gainsboro;
+    background-color: white;
+}
+
+.filters filtres-title {
+    padding:10px
+}
+
+.filtres button div {
+    margin-right: 5px;
+}
+
+.filtres button:hover {
+    background-color: #DEEBFF;
+}
