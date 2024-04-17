@@ -270,3 +270,27 @@ a {
 .filtres button:hover {
     background-color: #DEEBFF;
 }
+
+.h2 {
+    font-size:small;
+    font-weight: 100;
+    color:gray;
+}
+
+.logements-disponibles {
+    display: flex;
+    justify-content:flex-start;
+    align-items:baseline;
+}
+
+.logements-disponibles i {
+    margin-right: 10px;
+    }
+
+.logements-disponibles h2 {
+    font-size:small;
+    font-weight: 100;
+    color:gray;
+}      
+
+
