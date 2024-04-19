@@ -271,11 +271,6 @@ a {
     background-color: #DEEBFF;
 }
 
-.h2 {
-    font-size:small;
-    font-weight: 100;
-    color:gray;
-}
 
 .logements-disponibles {
     display: flex;
@@ -285,12 +280,26 @@ a {
 
 .logements-disponibles i {
     margin-right: 10px;
-    }
+}
 
-.logements-disponibles h2 {
-    font-size:small;
+.h3 {
     font-weight: 100;
-    color:gray;
-}      
+    font-size: smaller;
+}
 
+.afficher {
+    
+}
 
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
