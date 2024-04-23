@@ -135,8 +135,6 @@ a {
 
     .hebergements {
         display: flex;
-        flex-direction: column; /* Display elements as a column */
-        align-items: center; /* Align items horizontally at the center */
         width: 100%;
     }
 
@@ -291,21 +289,24 @@ a {
 }
 
 .afficher {
-    display: flex;
     
 }
 
 
-.hebergements-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
+    justify-content: space-between; /* Equal space between cards */
+    align-items: center;
+}
+
+.hebergements-cards img {
+    width: 100%; /* Take up the entire width of the container */
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
