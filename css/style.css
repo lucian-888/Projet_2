@@ -134,6 +134,9 @@ a {
     }
 
     .hebergements {
+        display: flex;
+        flex-direction: column; /* Display elements as a column */
+        align-items: center; /* Align items horizontally at the center */
         width: 100%;
     }
 
@@ -288,8 +291,10 @@ a {
 }
 
 .afficher {
+    display: flex;
     
 }
+
 
 .hebergements-cards img {
     width: 33%;
@@ -303,3 +308,4 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
+
