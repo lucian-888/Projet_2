@@ -247,9 +247,10 @@ a {
 }
 
 .filtres {
+    background-color: aliceblue;
     display: flex;
     margin-top: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     align-items: center;
     font-size: 18px;
     font-weight:bolder;
@@ -311,11 +312,6 @@ a {
     margin-bottom: 40px;
 }
 
-.afficher {
-    
-}
-
-
 .hebergements-cards {
     display: flex;
     flex-direction: row;
@@ -336,5 +332,9 @@ a {
     border: 1px solid rgb(188, 187, 187);
     border-radius: 50%;
     padding: 3px;
+}
+
+.logements-disponibles {
+    margin-bottom: 22px;
 }
 
