@@ -248,7 +248,7 @@ a {
 
 .filtres {
     display: flex;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-bottom: 25px;
     align-items: center;
     font-size: 18px;
@@ -259,8 +259,9 @@ a {
     display: flex;
     align-items: center;
     margin-left: 25px;
+    margin-right: 1px;
     border-radius: 25px;
-    padding: 13px 17px;
+    padding: 12px 17px;
     font-size: 18px;
     font-weight:bolder;
     border:3px solid gainsboro;
@@ -268,7 +269,7 @@ a {
 }
 
 .filtres button i {
-    margin-right: 10px; /* Add some space between icon and text */
+    margin-right: 12px; /* Add some space between icon and text */
 }
 
 .filters filtres-title {
@@ -295,7 +296,9 @@ a {
 }
 
 .h1 {
-    color: aquamarine;
+    font-size: 22px;
+    margin-top: 55px;
+    margin-bottom: 5px;
 }
 
 .h3 {
@@ -303,8 +306,9 @@ a {
     font-size: smaller;
 }
 
-.p {
-    color: #0065FC;
+.p1 {
+    margin-top: 1px;
+    margin-bottom: 40px;
 }
 
 .afficher {
@@ -324,10 +328,13 @@ a {
     width: 100%; /* Take up the entire width of the container */
     height: 136px;
     border-top-left-radius: 20px;
- 
     border-top-right-radius: 20px;
-
-    
 }
 
+
+.logements-disponibles i {
+    border: 1px solid rgb(188, 187, 187);
+    border-radius: 50%;
+    padding: 3px;
+}
 
