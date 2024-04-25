@@ -90,7 +90,7 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .populaires-cards img {
@@ -107,6 +107,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 .populaires-cards .card-title {
@@ -317,6 +318,7 @@ a {
     align-items: center;
     justify-content: space-between; 
     gap: 30px;
+    margin-top: 10px;
     
 }
 
@@ -336,5 +338,32 @@ a {
 
 .logements-disponibles {
     margin-bottom: 22px;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.activites-cards > div {
+    flex: 1; /* Each card container takes up equal space */
+    max-width: calc(25% - 20px); /* Limit maximum width to 25% minus the gap */
+}
+
+.activites-cards img {
+    width: 100%; /* Take up the entire width of the container */
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove all padding */
+}
+
+.activites {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
