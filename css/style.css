@@ -172,7 +172,7 @@ a {
 }
 
 
-.header{
+.header {
     display:flex;
     justify-content: space-between;
     margin-bottom: 40px;
@@ -292,11 +292,17 @@ a {
     display: flex;
     justify-content:flex-start;
     align-items:baseline;
+    margin-bottom: 22px;
 }
 
+
 .logements-disponibles i {
+    border: 1px solid rgb(188, 187, 187);
+    border-radius: 50%;
+    padding: 3px;
     margin-right: 10px;
 }
+
 
 .h1 {
     font-size: 22px;
@@ -333,21 +339,19 @@ a {
     border-top-right-radius: 20px;
 }
 
-
-.logements-disponibles i {
-    border: 1px solid rgb(188, 187, 187);
-    border-radius: 50%;
-    padding: 3px;
+.activites {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.logements-disponibles {
-    margin-bottom: 22px;
-}
 
 .activites-cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-top: 33px;
 }
 
 .activites-cards > div {
@@ -364,16 +368,6 @@ a {
     padding: 0; /* Remove all padding */
 }
 
-.activites {
-    margin-top: 20px;
-    border-radius: 20px;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.activites-cards {
-     margin-top: 33px;
-}
 
 .footer {
     display: flex;
