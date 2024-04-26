@@ -47,6 +47,7 @@ a {
     object-fit: cover;
 }
 
+
 .card-title {
     font-size: 16px;
 }
@@ -63,6 +64,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .hebergements-and-populaires section {
@@ -319,8 +321,10 @@ a {
     justify-content: space-between; 
     gap: 30px;
     margin-top: 10px;
-    
+    margin-bottom: 1px;
 }
+
+
 
 .hebergements-cards img {
     width: 100%; /* Take up the entire width of the container */
@@ -367,3 +371,14 @@ a {
     box-sizing: border-box;
 }
 
+.activites-cards {
+     margin-top: 33px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: gainsboro;
+}
