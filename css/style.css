@@ -131,14 +131,17 @@ body {
 .filtres button {
     display: flex;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 1px;
+    margin-right: 10px;
     border-radius: 25px;
     padding: 12px 17px;
     font-size: 18px;
     font-weight:bolder;
     border:3px solid gainsboro;
     background-color: white;
+}
+
+.filtres-title {
+    margin-right: 10px;
 }
 
 .filtres button i {
@@ -342,10 +345,9 @@ a {
 }
 
 .card-txt {
+    font-size: 16px;
     margin-left: 20px;
 }
-
-
 
 .footer {
     display: flex;
@@ -400,7 +402,9 @@ a {
    .filtres-title {
     width: 100%;
     margin-bottom: 8px;
+    margin-right: 10px;
    }
+
 
    .filtres {
     display: flex; /* Ensure buttons stay in row */
