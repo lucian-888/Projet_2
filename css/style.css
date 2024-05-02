@@ -160,11 +160,15 @@ body {
     background-color: #DEEBFF;
 }
 
+
+
 .h1 {
     font-size: 22px;
     margin-top: 55px;
     margin-bottom: 5px;
 }
+
+
 
 .h3 {
     font-weight: 100;
@@ -362,7 +366,6 @@ a {
 
 
 
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -425,7 +428,38 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .header {
+        flex-direction: column; /* Stack elements in a column */
+    }
+
+    .container-logo {
+        align-self: center;
+    }
+
+    .nav a {
+        align-items: flex-start;
+        margin-left: 20px; /* Adjust the margin as needed */
+        transition: all 400ms;  
+        padding-bottom: 10px;
+        border-bottom:  2px solid transparent;
+        margin-right: 40px;
+        border-top: none !important; /* should remove border top but it doesn't !!! */
+    }
+    
+    .nav a:hover {
+        color:#0065FC;
+        border-bottom: 2px solid #0065FC;
+    }
+    
+    .h1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .h1 span {
+        width: 100%;
+        text-align: left;
+    } 
+
 }
 
 
