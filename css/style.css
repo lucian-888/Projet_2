@@ -77,10 +77,15 @@ body {
 
 .search-form input[type="text"] {
     text-align: center;
+    width: 250px;
+    margin-right: -10px;
     font-weight: 700;
     font-size: 18px;
     color:black; 
-    border:0.2px solid gainsboro;
+    border-left: 0;
+    border-right: 0;
+    border-top:0.1px solid gainsboro;
+    border-bottom:0.1px solid gainsboro;
 }
 
 .search-form input[type="text"]::placeholder {
@@ -142,14 +147,11 @@ body {
 
 .filtres-title {
     margin-right: 10px;
+    padding:20px
 }
 
 .filtres button i {
     margin-right: 12px; /* Add some space between icon and text */
-}
-
-.filters filtres-title {
-    padding:20px
 }
 
 .filtres button div {
@@ -460,8 +462,39 @@ a {
         text-align: left;
     } 
 
-}
+    .search-form button {
+        
+        display: flex;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065FC;
+        color: white;
+        border-top-left-radius:15px;
+        border-bottom-left-radius:15px;
+        
+    }
 
+      /* Hide the text inside the button and display the magnifying glass icon */
+      .search-form button span {
+        display: none;
+    }
+
+    .search-form button i {
+        display: block;
+    }
+
+    .search-form button::before {
+        content: "\f002"; /* Unicode for the search icon */
+        font-family: "Font Awesome 6 Solid"; /* Font family for the icon */
+        font-size: 18px; /* Adjust the size as needed */
+        align-content: center;
+        justify-content: center;
+    }
+
+   
+}
 
 
 
