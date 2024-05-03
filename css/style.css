@@ -432,6 +432,7 @@ a {
 @media (max-width: 767.98px) {
     .header {
         flex-direction: column; /* Stack elements in a column */
+        
     }
 
     .container-logo {
@@ -456,6 +457,7 @@ a {
     .h1 {
         display: flex;
         flex-wrap: wrap;
+        
     }
     .h1 span {
         width: 100%;
@@ -476,23 +478,19 @@ a {
         
     }
 
-      /* Hide the text inside the button and display the magnifying glass icon */
-      .search-form button span {
-        display: none;
+    .filtres-buttons {
+        flex-wrap: wrap; 
     }
 
-    .search-form button i {
-        display: block;
+    /* Adjust individual button widths for better alignment */
+    .filtres-buttons button {
+        
+        width: calc(50% - 5px); /* Adjust button width to fit two buttons per line with some spacing */
+        margin-right: 5px; /* Add some space between buttons */
+        margin-bottom: 10px;
+        font-size: 15px;
+        padding: 12px 12px !important;
     }
-
-    .search-form button::before {
-        content: "\f002"; /* Unicode for the search icon */
-        font-family: "Font Awesome 6 Solid"; /* Font family for the icon */
-        font-size: 18px; /* Adjust the size as needed */
-        align-content: center;
-        justify-content: center;
-    }
-
    
 }
 
