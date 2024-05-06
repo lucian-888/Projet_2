@@ -145,6 +145,14 @@ body {
     background-color: white;
 }
 
+.search-form button span {
+    display: inline-block; /* Show the text */
+}
+
+.search-form button i {
+    display: none; /* Hide the magnifying glass icon */
+}
+
 .filtres-title {
     margin-right: 10px;
     padding:20px
@@ -373,6 +381,16 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+
+    .search-form button span {
+        display: inline-block; /* Show the text */
+    }
+
+    .search-form button i {
+        display: none; /* Hide the magnifying glass icon */
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -430,9 +448,11 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+
     .header {
         flex-direction: column; /* Stack elements in a column */
-        
+        border-bottom: 2px solid #ebecee;
     }
 
     .container-logo {
@@ -447,11 +467,14 @@ a {
         border-bottom:  2px solid transparent;
         margin-right: 40px;
         border-top: none !important; /* should remove border top but it doesn't !!! */
+    
     }
     
     .nav a:hover {
         color:#0065FC;
         border-bottom: 2px solid #0065FC;
+       
+    
     }
     
     .h1 {
@@ -464,6 +487,19 @@ a {
         text-align: left;
     } 
 
+
+    .h500 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .h500 span {
+        width: 100%;
+        text-align: left;
+    }
+
+
+
     .search-form button {
         
         display: flex;
@@ -475,8 +511,32 @@ a {
         color: white;
         border-top-left-radius:15px;
         border-bottom-left-radius:15px;
+        position: relative; /* Set position relative to allow absolute positioning of pseudo-element */
+    }
+
+    
+
+    .search-form button::after {
+        content: ''; /* Add content to the pseudo-element */
+        position: absolute; /* Position the pseudo-element absolutely */
+        top: calc(100% + 2px); /* Position it just below the button */
+        left: 0; /* Align it with the left side of the button */
+        width: 100%; /* Make it span the full width of the button */
+        height: 5px; /* Set the height of the shaded area */
+        background-color: rgba(0, 0, 0, 0.1); /* Set the background color with some opacity */
+        border-radius: 0 0 15px 15px; /* Apply border radius to match the button */
         
     }
+
+   
+    .search-form button span {
+        display: none; /* Hide the text */
+    }
+
+    .search-form button i.fa-solid {
+        display: inline-block !important; /* Show the magnifying glass icon */
+    }
+    
 
     .filtres-buttons {
         flex-wrap: wrap; 
@@ -485,13 +545,72 @@ a {
     /* Adjust individual button widths for better alignment */
     .filtres-buttons button {
         
-        width: calc(50% - 5px); /* Adjust button width to fit two buttons per line with some spacing */
-        margin-right: 5px; /* Add some space between buttons */
-        margin-bottom: 10px;
+        width: calc(50% - 10px); /* Adjust button width to fit two buttons per line with some spacing */
+        margin-right: 10px; /* Add some space between buttons */
+        margin-bottom: 15px;
         font-size: 15px;
         padding: 12px 12px !important;
     }
+
+    .logements-disponibles {
+        margin-top: 0;
+    }
+
+
+    .hebergements-and-populaires {
+        flex-direction: column; /* Stack elements in a column */
+        gap: 20px;
+    }
+
+    .hebergements {
+        order: 2; /* Set the order of the hebergements section to be displayed second */
+    }
+
+    .populaires {
+        order: 1; /* Set the order of the populaires section to be displayed first */
+    }
    
+    
+    .hebergements-cards 
+    .populaires-cards,
+    .activites-cards {
+        display: flex;
+        flex-direction: column; /* Stack cards in a column */
+        align-items: center; /* Center cards horizontally */
+       
+    }
+
+    .hebergements-cards a {
+        
+        width: 100%; /* Each item takes up the full width */
+    }
+
+    .populaires-cards {
+        display: block;
+    }
+
+  
+    
+    .footer {
+       
+        flex-direction: column; /* Stack cards in a column */
+        align-items: left; /* Center cards horizontally */
+        padding-bottom: 1000px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+
+    .activites-cards > div {
+        flex: 1; /* Each card container takes up equal space */
+        max-width: calc(100% - 5px); /* Limit maximum width to 25% minus the gap */
+        
+    }
+
+    
+
+
+
 }
 
 
