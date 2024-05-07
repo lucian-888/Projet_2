@@ -124,6 +124,7 @@ body {
     display: flex;
     margin-top: 35px;
     margin-bottom: 20px;
+    
     align-items: center;
     font-size: 18px;
     font-weight:bolder;
@@ -155,7 +156,7 @@ body {
 
 .filtres-title {
     margin-right: 10px;
-    padding:20px
+    padding:0px
 }
 
 .filtres button i {
@@ -354,9 +355,7 @@ a {
     padding: 0; /* Remove all padding */
 }
 
-.card-content {
-    height: 45px;
-}
+
 
 .card-txt {
     font-size: 16px;
@@ -449,9 +448,14 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .mobile {
+        margin-left: 11px;
+    }
+
 
     .header {
         flex-direction: column; /* Stack elements in a column */
+        text-align: center;
         border-bottom: 2px solid #ebecee;
     }
 
@@ -459,15 +463,18 @@ a {
         align-self: center;
     }
 
+    .nav {
+        width: 100%;
+    }
     .nav a {
         align-items: flex-start;
-        margin-left: 20px; /* Adjust the margin as needed */
+        margin: 0;
         transition: all 400ms;  
         padding-bottom: 10px;
         border-bottom:  2px solid transparent;
-        margin-right: 40px;
+        
         border-top: none !important; /* should remove border top but it doesn't !!! */
-    
+        width: 50%;
     }
     
     .nav a:hover {
@@ -480,7 +487,7 @@ a {
     .h1 {
         display: flex;
         flex-wrap: wrap;
-        
+        margin: 5px 0 5px;
     }
     .h1 span {
         width: 100%;
@@ -501,6 +508,8 @@ a {
 
 
     .search-form button {
+        box-shadow: 0px 4px 4px 0px #00000040;
+
         
         display: flex;
         height: 50px;
@@ -516,30 +525,26 @@ a {
 
     
 
-    .search-form button::after {
-        content: ''; /* Add content to the pseudo-element */
-        position: absolute; /* Position the pseudo-element absolutely */
-        top: calc(100% + 2px); /* Position it just below the button */
-        left: 0; /* Align it with the left side of the button */
-        width: 100%; /* Make it span the full width of the button */
-        height: 5px; /* Set the height of the shaded area */
-        background-color: rgba(0, 0, 0, 0.1); /* Set the background color with some opacity */
-        border-radius: 0 0 15px 15px; /* Apply border radius to match the button */
-        
-    }
+
 
    
     .search-form button span {
         display: none; /* Hide the text */
     }
 
-    .search-form button i.fa-solid {
-        display: inline-block !important; /* Show the magnifying glass icon */
+    .search-form button i {
+        display: block; /* Show the magnifying glass icon */
+        color: white;
     }
     
+    .filtres-title {
+        padding: 0;
+    
+    }
 
     .filtres-buttons {
         flex-wrap: wrap; 
+       align-items: center;
     }
 
     /* Adjust individual button widths for better alignment */
@@ -580,6 +585,11 @@ a {
        
     }
 
+
+    .hebergements-cards {
+        flex-wrap: wrap;
+    }
+    
     .hebergements-cards a {
         
         width: 100%; /* Each item takes up the full width */
@@ -603,13 +613,23 @@ a {
 
     .activites-cards > div {
         flex: 1; /* Each card container takes up equal space */
-        max-width: calc(100% - 5px); /* Limit maximum width to 25% minus the gap */
+        width: calc(100% - 5px); /* Limit maximum width to 25% minus the gap */
         
     }
 
-    
+    .activites-cards img {
+        width: 100%; /* Take up the entire width of the container */
+        height: 150px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin: 0; /* Remove all margins */
+        padding: 0; /* Remove all padding */
+       
+    }
 
-
+    .main-container {
+        padding: 0;
+    }
 
 }
 
