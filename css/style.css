@@ -366,7 +366,7 @@ a {
     display: flex;
     margin-top: 60px;
     padding: 20px;
-    background-color: gainsboro;
+    background-color:#F2F2F2;
 }
 
 .footer > div {
@@ -435,13 +435,22 @@ a {
  
 .activites-cards img {
     width: 100%; /* Take up the entire width of the container */
-    height: 220px;
+    height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin: 0; /* Remove all margins */
     padding: 0; /* Remove all padding */
 }
 
+.activites .card-content {
+    padding-bottom: 20px;
+    
+}
+
+.activites card {
+    height: auto;
+}
+  
 
 }
 
@@ -561,18 +570,29 @@ a {
         margin-top: 0;
     }
 
+    
 
     .hebergements-and-populaires {
         flex-direction: column; /* Stack elements in a column */
         gap: 20px;
     }
 
+    
+    
+    .hebergements section {
+        background-color: white !important;
+    }
+
+
+
     .hebergements {
         order: 2; /* Set the order of the hebergements section to be displayed second */
+        background-color: white !important;
     }
 
     .populaires {
         order: 1; /* Set the order of the populaires section to be displayed first */
+        border-radius: 0 !important;
     }
    
     
@@ -599,7 +619,7 @@ a {
         display: block;
     }
 
-  
+   
     
     .footer {
        
@@ -610,20 +630,22 @@ a {
         margin-right: 0;
     }
     
+   
 
     .activites-cards > div {
         flex: 1; /* Each card container takes up equal space */
         width: calc(100% - 5px); /* Limit maximum width to 25% minus the gap */
+       
         
     }
 
     .activites-cards img {
-        width: 100%; /* Take up the entire width of the container */
-        height: 150px;
+        width: 100%; 
+        height: 59px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        margin: 0; /* Remove all margins */
-        padding: 0; /* Remove all padding */
+        margin: 0; 
+        padding: 0;  
        
     }
 
