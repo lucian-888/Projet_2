@@ -274,6 +274,10 @@ a {
     margin-bottom: 5px;
 }
 
+.hebergements-cards .card-rating {
+   margin-left: 20px;
+}
+
 .hebergements-cards .card-title {
     margin-bottom: 5px;
 }
@@ -322,6 +326,7 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 .activites {
