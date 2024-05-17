@@ -124,7 +124,6 @@ body {
     display: flex;
     margin-top: 35px;
     margin-bottom: 20px;
-    
     align-items: center;
     font-size: 18px;
     font-weight:bolder;
@@ -334,8 +333,8 @@ a {
 
 .activites-cards a {
     display: block;
-        width: 25%;
-        height: auto;
+    width: 25%;
+    height: auto;
    } 
 
 .activites .card-content {
@@ -554,8 +553,7 @@ a {
 
     .filtres-buttons {
         flex-wrap: wrap; 
-       align-items: center;
-       /* width: 350px; ??*/
+        align-items: center;
     }
 
     /* Adjust individual button widths for better alignment */
@@ -626,7 +624,7 @@ a {
 
    .activites-cards a {
         display: block;
-       width: 100%;
+        width: 100%;
     }
 
     .activites-cards img {
